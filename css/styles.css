@@ -1,0 +1,110 @@
+.nav-pills{
+	font-family: lobster;
+	font-size: 1.7em;
+	background-color: white;
+}
+
+body{
+	/*font-family: lobster;*/
+	background-color: grey;
+	color: white;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	/*font-size: 2em;*/
+}
+
+.menu{
+	/*width: 100%;*/
+}
+
+.intro,
+#about-me
+.portfolio,
+.contact-me{
+	margin-bottom: 3em;
+}
+
+.description{
+	padding: 20px;
+}
+
+
+h1{
+	font-family: lobster;
+	padding: 0;
+	font-size: 4em;
+}
+
+h2{
+	font-family: lobster;
+	font-size: 2.5em;
+	padding-bottom: 0.5em;
+	color: blue;
+}
+
+h3{
+	font-family: lobster;
+	/*margin-top: 2em*/
+	color: blue;
+}
+
+p{
+	font-size: 1.5em;
+	color: white;
+	text-align: justify;
+}
+
+.my-image{
+	width: 55%;
+	border-radius: 50%;
+	/*margin: 0 auto;*/
+	max-height: 30em;
+}
+
+.btn-default{
+	background-color: black;
+	color: blue;
+	font-size: 1.7em;
+	border-radius: 10px
+}
+
+#facebookIcon{
+	color: blue;
+}
+#twitterIcon{
+	color: lightblue;
+}
+
+#githubIcon{
+	color: white;
+}
+
+#linkedinIcon{
+	color: #0077B5;
+}
+
+.projects{
+	width: 90%;
+	height: 20rem;
+}
+
+.work-desc{
+	font-size: 1.3em;
+}
+
+footer > p{
+	background-color: black;
+	width: 100%;
+	color: green;
+	font-size: 1.2em;
+	font-family: lobster;
+	padding: 0.5em;
+	/*padding-top: 3em;*/
+}
+
+
+textarea,
+input{
+	color: black;
+	width: 100%;
+}
