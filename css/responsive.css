@@ -1,0 +1,47 @@
+.menu-icon{
+	display: none
+
+}
+
+@media screen and (max-width: 557px) {
+	.logo {
+		height: 2em;
+		width: 2em
+	}
+	.menu {
+		padding-top: 0.5em;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	a {
+		padding: 2em;
+	}
+
+	.menu {
+		padding: 0px;
+		width: 4em;
+		font-size: 0.8em;
+		margin: 0px;
+		height: 0.5em
+
+	}
+}
+
+@media screen and (max-width: 343px) {
+	.menu {
+		visibility: hidden;
+	}
+	.logo{
+		height: 6em;
+		width: 9em;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	main {
+		width: 850px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
