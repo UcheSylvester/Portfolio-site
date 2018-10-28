@@ -4,133 +4,140 @@
 	<title>portfolio</title>
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 
 <body>
 	<div class="container-fluid">
-		<div class="menu">
+
+	    <a id="menu" class="menu-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+	
+ 		<nav>
 			<ul class="nav nav-pills">
 				<li>
-					<a href="#">Uchenna Sylvester</a>
+					<a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
 				</li>
-				<li class="pull-right">
+
+				<li class="pull-right menu">
+					<a href="#contact-me">Contact Me</a>
+				</li>
+				<li class="pull-right menu">
+					<a href="#portfolio">Portfolio</a>
+				</li>
+				<li class="pull-right menu">
 					<a href="#about-me">About Me</a>
-				</li>		
-				<!-- <li class="pull-right">
-					<a href="#">Experience</a>
-				</li> -->
-				<li class="pull-right">
-					<a href="#">Portfolio</a>
-				</li>
-				<li class="pull-right">
-					<a href="#">Contact Me</a>
 				</li>
 			</ul>
-		</div>
+		</nav>
 
+		<main>
+			<section id="intro">
+				<div class="description text-center">
+					<h1>Uchenna S. Okoro</h1>
+					<div class="col-md-12">
+						<img src="img/me.jpg" class="my-image">
+					</div>
+					<h3>Aiming Towards Greatness!</h3>
+				</div>
+				
+				<div class="btnList text-center">
+					<a href="https://www.facebook.com/okoro.sylvesteruchenna" class="btn btn-default" target="blank"><i class="fa fa-facebook fa-lg" id="facebook-icon"></i> Facebook</a>
+					<a href="https://twitter.com/UC_Code" class="btn btn-default" target="blank"><i class="fa fa-twitter fa-lg" id="twitter-icon"></i> Twitter</a>
+					<a href="https://www.linkedin.com/in/uchenna-okoro/" class="btn btn-default" target="blank"><i class="fa fa-linkedin fa-lg" id="linkedin-icon"></i> LinkedIn</a>
+					<a href="https://github.com/UcheSylvester" class="btn btn-default" target="blank"><i class="fa fa-github fa-lg" id="github-icon"></i> GitHub</a>
+				</div>
+			</section>
 
-		<section class="intro">
-			<div class="description text-center">
-				<h1>Uchenna Okoro</h1>
-				<div class="col-md-12">
-					<img src="img/me.jpg" class="my-image">
+			<section id="about-me">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2>About Me</h2>
+					</div>
 				</div>
-				<h3>Aiming Towards Greatness!</h3>
-			</div>
-			
-			<div class="btnList text-center">
-				<a href="#" class="btn btn-default"><i class="fa fa-facebook fa-lg" id="facebookIcon"></i> Facebook</a>
-				<a href="#" class="btn btn-default"><i class="fa fa-twitter fa-lg" id="twitterIcon"></i> Twitter</a>
-				<a href="#" class="btn btn-default"><i class="fa fa-linkedin fa-lg" id="linkedinIcon"></i> LinkedIn</a>
-				<a href="https://github.com/UcheSylvester" class="btn btn-default"><i class="fa fa-github fa-lg" id="githubIcon"></i> GitHub</a>
-				<!-- <a href="#" class="btn btn-default">Twitter</a> -->
-			</div>
-		</section>
+				<div class="row">
+					<div class="col-md-12">
+						<p>I am a self-taught web developer and a Google African Udacity Scholar passionate about using technology to proffer solutions to real world challenges.
+						</p> 
+						<p>
+						I have been developing on the web for a couple of years. With hands-on skills and experience on the use HTML, CSS, JavaScript, jQuery, node.js, and Angular I can create responsive and progressive web applications to users' satisfaction.
+						</p> 
+					</div>
+				</div>
+			</section>
 
-		<section id="about-me">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h2>About Me</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<p>I am a self-taught web developer and a Google African Udacity Scholar passionate about using technology to proffer solutions to real world challenges.
-					</p> 
-					<p>
-					I have been developing on the web for a couple of years. With hands-on skills and experience on the use HTML, CSS, JavaScript, jQuery, node.js, and Angular I can create responsive and progressive web applications to user's satisfaction
-					</p> 
-				</div>
-			</div>
-		</section>
-
-		<section class="portfolio">
-			<div class="text-center">
-				<h2>Portofolio and Projects</h2>
-			</div>
-
-			<div class="row text-center">
-				<div class="col-md-4">
-					<img src="img/memory-game.png" alt="Memory Game" class="projects">
-					<a href="#">
-						<h3>Memory Game</h3>
-						<p class="work-desc">
-							Built with HTML, CSS and JavaScript, this is a fun game to test the players memory capacity!
-						</p>
-					</a>
-				</div>
-
-				<div class="col-md-4">
-					<img src="img/arcade-game.png" alt="Arcade Game" class="projects">
-					<a href="#">
-						<h3>Arcade Game</h3>
-						<p class="work-desc">
-							To test my Object Oriented JavaScript skills, I built this app, a fun game where the hero is controlled with the keyboard. It's worth checking out!
-						</p>
-					</a>
-				</div>
-
-				<div class="col-md-4">
-					<img src="img/restuarant-app.jpg" alt="Restuarant Review App" class="projects">
-					<a href="#">
-						<h3>Restuarant Review App</h3>
-						<p class="work-desc">
-							You ever wanna review restuarants near you and have real-time experience of what they offer. This progressive application is for you!
-						</p>
-					</a>
-				</div>
-			</div>
-		</section>
-
-		<section class="contact-me">
-			<h2 class="text-center">Contact Me</h2>
-			<form>
-				<div class="form-group">
-					<label for="name">Frist Name:</label>
-					<input type="letter" name="firstname" class="form-control" id="name" placeholder="Enter First Name">
-				</div>
-				<div class="form-group">
-					<label for="email">Email:</label>
-					<input type="email" name="email" class="form-control" id="email" placeholder="Enter Email">
-				</div>
-				<div class="form-group">
-					<label for="text">Type your Message Below</label>
-					<textarea type="text" class="md-textarea form-control" rows="3" id="text"></textarea>
-				</div>
+			<section id="portfolio">
 				<div class="text-center">
-					<button type="submit" class="btn btn-default">Submit</button>
+					<h2>Portofolio and Projects</h2>
 				</div>
-			</form>
-		</section>
+
+				<div class="row text-center">
+					<div class="col-md-4">
+						<img src="img/memory-game.png" alt="Memory Game" class="projects">
+						<a href="https://uchesylvester.github.io/FEND-Memory-Game/" target="blank">
+							<h3>Memory Game</h3>
+							<p class="work-desc">
+								Built with HTML, CSS and JavaScript, this is a fun game to test the players memory capacity!
+							</p>
+						</a>
+					</div>
+
+					<div class="col-md-4">
+						<img src="img/arcade-game.png" alt="Arcade Game" class="projects">
+						<a href="https://uchesylvester.github.io/Arcade-Game/" target="blank">
+							<h3>Arcade Game</h3>
+							<p class="work-desc">
+								To test my Object Oriented JavaScript skills, I built this app, a fun game where the hero is controlled with the keyboard. It's worth checking out!
+							</p>
+						</a>
+					</div>
+
+					<div class="col-md-4">
+						<img src="img/restuarant-app.jpg" alt="Restuarant Review App" class="projects">
+						<a href="#">
+							<h3>Restuarant Review App</h3>
+							<p class="work-desc">
+								You ever wanted to review restuarants near you and have real-time experience of what they offer? This progressive application is for you!
+							</p>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact-me">
+				<h2 class="text-center">Contact Me</h2>
+				<form>
+					<div class="form-group">
+						<label for="name">Frist Name:</label>
+						<input type="letter" name="firstname" class="form-control" id="name" placeholder="Enter First Name">
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" name="email" class="form-control" id="email" placeholder="Enter Email">
+					</div>
+					<div class="form-group">
+						<label for="text">Type your Message Below:</label>
+						<textarea type="text" class="md-textarea form-control" rows="3" id="text"></textarea>
+					</div>
+					<div class="text-center">
+						<button type="submit" class="btn btn-default">Submit</button>
+					</div>
+				</form>
+			</section>
+		</main>
 
 		<footer>
-			<p>Copyright &copy UcheSylvester 2018. All Rights Reserved</p>
+			<p class="text-center">Copyright &copy UcheSylvester 2018. All Rights Reserved</p>
 		</footer>
+		
 	</div>
 </body>
 </html>
