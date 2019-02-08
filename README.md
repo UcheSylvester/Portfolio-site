@@ -1,3 +1,4 @@
 # Portfolio-site
-Udacity FEND Nanodegree project
+My personal portofolio site!
+
 https://uchesylvester.github.io/Portfolio-site/
