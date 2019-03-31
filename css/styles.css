@@ -130,6 +130,25 @@ input{
 
 
 .fetchedProjects {
-	text-align: center;
-	color: white;
+	/*text-align: center;*/
+	/*color: blue;*/
+	font-size: 1.2em;
+	font-family: lobster;
+}
+
+.list-group-item a{
+	color: blue;
+}
+
+.center {
+	text-align: center
+}
+
+.more-projects {
+	padding-top: 2em;
+	/*padding-bottom: 2em;*/
+}
+
+.more-projects button {
+	margin-bottom: 1.3em;
 }
