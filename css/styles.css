@@ -127,3 +127,9 @@ input{
 	color: black;
 	width: 100%;
 }
+
+
+.fetchedProjects {
+	text-align: center;
+	color: white;
+}

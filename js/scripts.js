@@ -1,41 +1,34 @@
-// console.log('working....');
 
-// function fetchProjects() {
-//     const projectsUrl = 'https://api.github.com/users/uchesylvester/repos';
+const projectsUrl = 'https://api.github.com/users/uchesylvester/repos';
+const projectList = document.querySelector('.fetchedProjects');
+const button = document.querySelector('.projectButton');
 
-//     let htmlContent = '';
-//     let container = document.createElement('div');
+const projects = [];
 
-//     fetch(projectsUrl)
-//     .then(function(response) {
-//         return response.json()
-//     })
-//     .then(function(projects) {
-
-//         for (const project of projects) {
-//             if(!project.fork) {
-//                 console.log(project.name);
-//                 htmlContent =  `
-//                 <table>
-//                     <tr>
-//                         <th>Projects Name</th>
-//                     </tr>
-//                 </table>
-//                 `
-//             }
-//         }
-//         // container.appendChild(htmlContent);
-//     })
-
-//     portfolio.insertAdjacentHTML('afterbegin', container)
-    
-// }
+fetch(projectsUrl)
+	.then(response => response.json())
+	.then(data => projects.push(...data));
 
 
+function displayProjects() {
 
-// document.addEventListener('DOMContentLoaded', function(e) {
-//     fetchProjects()
-// });
+	const html = projects.map(project => {
 
+		if(project.fork) return;  //stop running if project was forked!
+		const name = project.name;
+		const url = project.html_url;
 
-// // fetchProjects()
+		return `
+			<li> 
+				<a href="${url}" target="_blank" class="fetchedProjects">${name}</a>
+			</li>
+		`
+	}).join('')
+
+	// console.log(html);
+	projectList.innerHTML = html;
+}
+
+// window.addEventListener('DOMContentLoaded', displayProjects)
+
+button.addEventListener('click', displayProjects)
