@@ -27,6 +27,7 @@ function displayProjects() {
 
 	// console.dir(projectList)
 	button.style.fontFamily = 'lobster';
+	button.style.fontSize = '2em'
 
 	if(projectList.childElementCount === 0) {
 		console.log('working')

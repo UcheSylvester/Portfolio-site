@@ -132,7 +132,7 @@ input{
 .fetchedProjects {
 	/*text-align: center;*/
 	/*color: blue;*/
-	font-size: 1.2em;
+	font-size: 1.5em;
 	font-family: lobster;
 }
 
@@ -152,3 +152,4 @@ input{
 .more-projects button {
 	margin-bottom: 1.3em;
 }
+
